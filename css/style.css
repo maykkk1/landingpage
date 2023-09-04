@@ -285,6 +285,10 @@ form {
         font-size: 3rem;
     }
 
+    .header-content {
+        width: 95vw;
+    }
+
 
 }
 
