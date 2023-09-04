@@ -11,6 +11,7 @@
     --primary-color: #614BC3;
 }
 
+
 body{
     background-color: #E5E5E5 !important;
 }
@@ -98,6 +99,7 @@ nav ul {
     text-transform: capitalize;
     transition: 400ms;
     letter-spacing: 10px;
+    text-decoration: none;
 }
 
 .btn-hack:hover {
@@ -124,7 +126,7 @@ nav ul {
 }
 
 section {
-    margin-top: 50px !important;
+    padding-top: 60px !important;
 }
 
 /* O HACKATHON */
@@ -189,8 +191,55 @@ section {
     align-items: center;
 }
 
+/* Contato */
 
-@media (max-width: 600px) {
+#contato {
+    height: 80vh !important;
+    padding-bottom: 50px;
+}
+
+#contato > .row {
+    height: 100% !important;
+}
+
+#contato > .row > .col-md-6 {
+    padding: 0 !important;
+}
+
+.form-img-wrapper {
+    object-fit: cover !important;
+    height: 100%;
+    overflow: hidden !important;
+}
+
+.form-img-wrapper  img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-form {
+    background-color: var(--primary-color);
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border: none;
+}
+
+form {
+    padding: 40px 15px;
+    background-color: #1e1e1e;
+    color: white;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
     nav {
         flex-direction: column-reverse;
         padding: 0;
@@ -222,6 +271,10 @@ section {
 
     .tb-descricao {
         display: none;
+    }
+
+    .form-img-wrapper {
+        display: none !important;
     }
 
 
