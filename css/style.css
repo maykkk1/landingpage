@@ -278,6 +278,10 @@ form {
         display: none !important;
     }
 
+    .title {
+        font-size: 3rem;
+    }
+
 
 }
 
