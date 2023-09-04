@@ -8,7 +8,7 @@
 }
 
 :root {
-    --primary-color: #F24C3D;
+    --primary-color: #614BC3;
 }
 
 body{
@@ -31,7 +31,7 @@ header {
     width: 100vw;
     height: 100vh;
     position: relative;
-    background-color: #3c3c3c;
+    background-color: black;
 }
 
 nav {
@@ -50,13 +50,20 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 35px;
     margin: 0;
+    text-transform: uppercase !important;
 }
 
 .nav-item {
     text-decoration: none;
     color: white;
+    transition: 400ms;
+    font-size: 1.5rem;
+}
+
+.nav-item:hover {
+    color: var(--primary-color);
 }
 
 .banner-wrapper {
@@ -68,7 +75,7 @@ nav ul {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: .3;
+    opacity: .85;
 }
 
 .header-content {
@@ -76,11 +83,33 @@ nav ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-hack {
+    margin-top: 100px;
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border: none;
+    font-size: 2rem;
+    padding: 20px 30px;
+    text-transform: capitalize;
+    transition: 400ms;
+    letter-spacing: 10px;
+}
+
+.btn-hack:hover {
+    background-color: #6244e9;
+    box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.322);
 }
 
 .title {
-    font-size: 5rem;
-    color: var(--primary-color);
+    font-size: 7rem;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 4px 10px black;
 }
 
 .menu-btn {
