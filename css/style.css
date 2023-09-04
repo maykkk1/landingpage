@@ -11,6 +11,10 @@
     --primary-color: #F94C10;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 body{
     background-color: #E5E5E5 !important;
@@ -27,6 +31,7 @@ main {
 
 h2 {
     margin-bottom: 50px !important;
+    text-decoration: underline var(--primary-color) dotted;
 }
 
 /* HEADER */
@@ -36,6 +41,10 @@ header {
     height: 100vh;
     position: relative;
     background-color: black;
+}
+
+#hackathon-link {
+    font-size: 3rem !important;
 }
 
 nav {
@@ -129,7 +138,7 @@ nav ul {
 }
 
 section {
-    padding-top: 60px !important;
+    padding-top: 75px !important;
 }
 
 /* O HACKATHON */
@@ -192,6 +201,53 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* Premiacao */
+
+#premiacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.premio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.premio > i {
+    font-size: 5rem;
+    margin-bottom: 20px !important;
+}
+
+#gold {
+    color: #D5AD6D; /*if no support for background-clip*/
+    background: -webkit-linear-gradient(transparent, transparent),
+    -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#silver {
+    color: rgb(255,242,181);
+      background-image: linear-gradient(rgb(150,150,150) 55%, 
+          rgb(40,40,40) 65%,
+          rgb(77,77,77) 84%);
+      text-align: center;
+      -webkit-background-clip:text;
+      -webkit-text-fill-color: transparent;
+}
+
+#bronze {
+    color: #D5AD6D; /*if no support for background-clip*/
+    background: -webkit-linear-gradient(transparent, transparent),
+    -webkit-linear-gradient(top, rgb(207, 147, 97) 0%, rgb(213, 138, 109) 26%, rgba(226,186,120,1) 35%, rgb(163, 105, 67) 45%, rgb(145, 83, 59) 61%, rgb(213, 156, 109) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Contato */
