@@ -8,7 +8,7 @@
 }
 
 :root {
-    --primary-color: #614BC3;
+    --primary-color: #F94C10;
 }
 
 
@@ -243,10 +243,11 @@ form {
     nav {
         flex-direction: column-reverse;
         padding: 0;
-        height: 100vh;
+        min-height: 100vh !important;
+        max-height: 100vh !important;
         width: 0;
         overflow: hidden;
-        transition: 400ms;
+        padding-bottom: 25px;
     }
 
     nav.show {
@@ -259,7 +260,7 @@ form {
         margin-top: 150px;
         padding: 0;
         width: 100%;
-    }cronograma
+    }
 
     .nav-item  {
         font-size: 1.5rem;
