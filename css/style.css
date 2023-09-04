@@ -115,7 +115,7 @@ nav ul {
 }
 
 .menu-btn {
-    position: absolute;
+    position: fixed;
     top: 30px;
     left: 30px;
     z-index: 200;
