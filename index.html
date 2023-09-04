@@ -1,12 +1,233 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
     <title>Hackathon - IFG</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <div onclick="showMenu()" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav id="header-nav">
+        <div class="logo-header">
+          <!-- arrumar uma logo -->
+          <h1>Hackathon</h1>
+        </div>
+        <ul>
+          <li>
+            <a class="nav-item" onclick="showMenu()" href="#hackathon"
+              >Hackathon</a
+            >
+          </li>
+          <li>
+            <a class="nav-item" onclick="showMenu()" href="#regras">Regras</a>
+          </li>
+          <li>
+            <a class="nav-item" onclick="showMenu()" href="#cronograma"
+              >Cronograma</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="banner-wrapper">
+        <img src="./assets/images/banner.jpg" alt="" />
+      </div>
+      <div class="header-content">
+        <h1 class="title">Hackathon</h1>
+      </div>
+    </header>
+    <main class="container">
+      <!-- Hackathon -->
+      <section id="hackathon">
+        <div class="row">
+          <h2>O Hackathon</h2>
+        </div>
+        <div class="row">
+          <p>
+            O Hackathon será realizado durante cinco dias, de
+            <strong>16 a 20 de outubro de 2023</strong>, no
+            <strong>IFG Campus Formosa</strong>, como parte da
+            <strong>SECITEC 2023</strong>. Durante esse período, os
+            participantes terão a oportunidade de trabalhar em suas soluções,
+            receber orientações de mentores especializados e participar de
+            workshops introdutórios.
+          </p>
+          <p>
+            Esse projeto visa promover a inovação, a colaboração, o pensamento
+            criativo e o desenvolvimento de soluções práticas para questões
+            relacionadas ao desenvolvimento sustentável. Esperamos incentivar o
+            engajamento dos participantes e fornecer uma oportunidade única para
+            aplicarem seus conhecimentos e habilidades em um contexto desafiador
+            e relevante para a sociedade.
+          </p>
+        </div>
+        <div class="row cards-hack">
+          <div class="col-md-2 col-4 card-hack">
+            <img src="./assets/icons/brainstom.png" alt="" />
+            <h3>Brainstorming</h3>
+          </div>
+          <div class="col-md-2 col-4 card-hack">
+            <img src="./assets/icons/planejamento.png" alt="" />
+            <h3>Planejamento</h3>
+          </div>
+          <div class="col-md-2 col-4 card-hack">
+            <img src="./assets/icons/programacao.png" alt="" />
+            <h3>Programação</h3>
+          </div>
+          <div class="col-md-2 col-4 card-hack">
+            <img src="./assets/icons/tempo.png" alt="" />
+            <h3>Gerenciamento de Tempo</h3>
+          </div>
+          <div class="col-md-2 col-4 card-hack">
+            <img src="./assets/icons/team.png" alt="" />
+            <h3>Trabalho em equipe</h3>
+          </div>
+          <div class="col-md-2 col-4 card-hack">
+            <img src="./assets/icons/objetivo.png" alt="" />
+            <h3>Objetivo</h3>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <!-- Regras -->
+      <section id="regras">
+        <div class="row">
+          <h2>Regras</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 regra">
+            <div class="regras-number">1</div>
+            <div class="regras-content">
+              <h3>Participantes</h3>
+              <p>Um mínimo de três pessoas e um máximo de cinco por equipe.</p>
+            </div>
+          </div>
+          <div class="col-md-6 regra">
+            <div class="regras-number">2</div>
+            <div class="regras-content">
+              <h3>Equipamentos</h3>
+              <p>
+                É necessário que os participantes tragam seus próprios
+                dispositivos (laptops, computadores, etc.) para desenvolverem
+                seus projetos durante o evento.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 regra">
+            <div class="regras-number">3</div>
+            <div class="regras-content">
+              <h3>Conhecimento</h3>
+              <p>
+                Recomenda-se que os participantes possuam conhecimentos básicos
+                de programação e estejam abertos a aprender e colaborar em
+                equipe.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 regra">
+            <div class="regras-number">4</div>
+            <div class="regras-content">
+              <h3>Público alvo</h3>
+              <p>
+                O Hackathon é direcionado a estudantes, entusiastas da
+                tecnologia e desenvolvedores iniciantes que desejam aplicar seus
+                conhecimentos em um contexto prático. Não é necessário ter
+                experiência prévia em hackathons, pois o evento oferecerá
+                workshops introdutórios e mentores para auxiliar os
+                participantes ao longo do processo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cronograma -->
+      <section id="cronograma">
+        <h2>Cronograma</h2>
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Data</th>
+              <th scope="col">Local</th>
+              <th scope="col">Descrição</th>
+              <th scope="col">Atividade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Dia 1</th>
+              <td>23 de outubro</td>
+              <td>Auditório</td>
+              <td>Apresentação do hackathon e formação das equipes</td>
+              <td>Abertura</td>
+            </tr>
+            <tr>
+              <th scope="row">Dia 2</th>
+              <td>24 de outubro</td>
+              <td>Campus Formosa</td>
+              <td>
+                Workshops introdutórios sobre tecnologias e conceitos relevantes
+                para o desenvolvimento das soluções. Mentores estarão
+                disponíveis para orientação individual e esclarecimento de
+                dúvidas.
+              </td>
+              <td>Workshops</td>
+            </tr>
+            <tr>
+              <th scope="row">Dia 3</th>
+              <td>25 de outubro</td>
+              <td>Campus Formosa</td>
+              <td>
+                Desenvolvimento dos projetos, com acompanhamento dos mentores.
+                Os participantes terão acesso a recursos e materiais de apoio
+                para auxiliar em seus projetos.
+              </td>
+              <td>Desenvolvimento</td>
+            </tr>
+            <tr>
+              <th scope="row">Dia 4</th>
+              <td>26 de outubro</td>
+              <td>Campus Formosa</td>
+              <td>
+                Refinamento e finalização das soluções. Preparação das
+                apresentações finais.
+              </td>
+              <td>Refinamento</td>
+            </tr>
+            <tr>
+              <th scope="row">Dia 5</th>
+              <td>27 de outubro</td>
+              <td>Auditório</td>
+              <td>
+                Apresentações finais das equipes. Cada equipe terá a
+                oportunidade de demonstrar sua solução, destacando os aspectos
+                técnicos e sua relevância para o desenvolvimento sustentável. Um
+                painel de jurados avaliará as apresentações.
+              </td>
+              <td>Apresentações</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p>&copy; 2023 Hackathon</p>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/619f70976e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
 </html>

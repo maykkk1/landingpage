@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Share Tech', sans-serif;
+}
+
+:root {
+    --primary-color: #F24C3D;
+}
+
+body{
+    background-color: #E5E5E5 !important;
+}
+
+main {
+    background-color: #E5E5E5;
+    width: 100vw;
+    color: rgb(36, 34, 34);
+}
+
+h2 {
+    margin-bottom: 50px !important;
+}
+
+/* HEADER */
+
+header {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #3c3c3c;
+}
+
+nav {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 200px;
+    position: fixed;
+    top: 0;
+    background-color: #1e1e1e;
+    z-index: 100;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+}
+
+.banner-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.banner-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .3;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    font-size: 5rem;
+    color: var(--primary-color);
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 200;
+    color: white;
+    cursor: pointer;
+    font-size: 2.5rem;
+    display: none;
+}
+
+section {
+    margin-top: 50px !important;
+}
+
+/* O HACKATHON */
+
+.cards-hack {
+    margin-top: 50px !important;
+}
+
+.card-hack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-hack img {
+    height: 65px;
+    margin-bottom: 15px;
+}
+
+#hackathon {
+    margin-top: 100px;
+}
+
+/* REGRAS */
+
+.regra {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px !important;
+}
+
+.regra h3, .regra p {
+    margin-bottom: 0 !important;
+}
+
+.regras-number {
+    background-color: var(--primary-color);
+    min-width: 50px !important;
+    height: 50px !important;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E5E5;
+    font-size: 2rem;
+    margin-right: 10px;
+    transform: translateY(-5px);
+}
+
+.row-regras {
+    margin-bottom: 100px !important;
+}
+
+/* Cronograma */
+
+#cronograma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column-reverse;
+        padding: 0;
+        height: 100vh;
+        width: 0;
+        overflow: hidden;
+        transition: 400ms;
+    }
+
+    nav.show {
+        width: 300px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 150px;
+        padding: 0;
+        width: 100%;
+    }cronograma
+
+    .nav-item  {
+        font-size: 1.5rem;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+
+}
+
