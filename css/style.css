@@ -14,6 +14,9 @@
 
 body{
     background-color: #E5E5E5 !important;
+    width: 100vw;
+    height: max-content;
+    overflow-x: hidden;
 }
 
 main {
