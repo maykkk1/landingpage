@@ -191,6 +191,10 @@ section {
         display: block;
     }
 
+    .tb-descricao {
+        display: none;
+    }
+
 
 }
 
