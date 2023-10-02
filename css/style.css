@@ -177,6 +177,12 @@ section {
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px !important;
+    z-index: 1;
+}
+
+.regras-wrapper {
+    position: relative;
+    z-index: 1;
 }
 
 .regra h3, .regra p {
@@ -198,6 +204,20 @@ section {
 
 .row-regras {
     margin-bottom: 100px !important;
+}
+
+.regras-content > p {
+    text-shadow: 2px 7px 5px white(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.regras-wrapper > img {
+    width: 250px;
+    position: absolute;
+    z-index: -1;
+    opacity: .4;
+    bottom: -60px;
+    right: 0;
 }
 
 /* Cronograma */
@@ -324,6 +344,14 @@ footer {
 
     .header-content {
         width: 95vw;
+    }
+
+    .regras-wrapper img {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
     }
 
 
